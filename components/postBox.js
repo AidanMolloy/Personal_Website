@@ -21,8 +21,8 @@ export default function PostBox(props) {
                   <div className={postStyles.company}>
                     {company}
                   </div>
-                <div className={postStyles.date}>
-                  <Date dateString={dateFrom} /> - <Date dateString={dateTo} /> · <DateBetween dateFrom={dateFrom} dateTo={dateTo} />
+                <div className={postStyles.dateContainer}>
+                  <div className={postStyles.dateItem}><Date dateString={dateFrom} /> - <Date dateString={dateTo} /></div>&nbsp;<div className={postStyles.dateItem}>· <DateBetween dateFrom={dateFrom} dateTo={dateTo} /></div>
                 </div>
               </div>
             </div>
