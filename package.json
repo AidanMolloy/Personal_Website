@@ -1,9 +1,15 @@
 {
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "scriptname": "cmd"
   },
   "dependencies": {
     "date-fns": "^2.29.3",
@@ -13,5 +19,13 @@
     "react-dom": "17.0.2",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1"
+  },
+  "devDependencies": {
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1"
   }
 }
