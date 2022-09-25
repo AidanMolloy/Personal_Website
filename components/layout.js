@@ -5,6 +5,8 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
+export const siteTitle = "Aidan Molloy's Website";
+
 const Logo = (props) => {
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
