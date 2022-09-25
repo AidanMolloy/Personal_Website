@@ -1,0 +1,52 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post {
+  margin: 0 0 22px;
+}
+
+.postInformation {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px;
+}
+
+.companyLogo {
+  padding: 5px 15px 0 0;
+}
+
+.right {
+  display: block;
+  width: 100%;
+}
+
+.position{
+  font-size: 24px;
+  font-weight: 500;
+  color: #3d3d3d;
+}
+
+.subHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company {
+  font-size: 20px;
+  font-weight: 400;
+  color: #3d3d3d;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: 300;
+  color: #3d3d3d;
+}
+
+.description {
+  color: #666;
+}
