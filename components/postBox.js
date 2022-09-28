@@ -6,13 +6,21 @@ export default function PostBox(props) {
   return (
     <ul className={postStyles.list}>
       {props.allPostsData.map(
-        ({ id, description, dateFrom, dateTo, company, position }) => (
+        ({
+          id,
+          summary,
+          dateFrom,
+          dateTo,
+          company,
+          company_logo,
+          position,
+        }) => (
           <li className={postStyles.post} key={id}>
             <div className={postStyles.postInformation}>
               {company ? (
                 <div className={postStyles.companyLogo}>
                   <Image
-                    src={`/companies/${company}.svg`}
+                    src={`/companies/${company_logo}`}
                     alt={`${company}'s Logo`}
                     height={40}
                     width={40}
@@ -36,7 +44,7 @@ export default function PostBox(props) {
                 </div>
               </div>
             </div>
-            <small className={postStyles.description}>{description}</small>
+            <small className={postStyles.description}>{summary}</small>
           </li>
         )
       )}
