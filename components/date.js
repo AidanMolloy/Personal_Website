@@ -22,7 +22,7 @@ export function DateBetween({ dateFrom, dateTo }) {
   months -= years * 12;
   if (months == 1) {
     str += months + " mo";
-  } else {
+  } else if (months > 0) {
     str += months + " mos";
   }
   return str;
