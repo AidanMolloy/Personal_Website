@@ -4,8 +4,8 @@ company: "UCC Netsoc"
 company_logo: "UCC_Netsoc.png"
 dateFrom: "2019-09-01"
 dateTo: "2020-06-01"
-summary: "University College Cork's Netsoc Society (the Networking, Gaming and Technology Society) runs a digital services network and provides educational opportunities for its almost 2,000 members as well as weekly gaming and social events. During my first year in UniversityO, I was elected to be the First Year Rep OCM on the committee, in this position I focued on advertising the society to other First Years and making exciting events targeted to other first years.
+summary: "During my first year in University, I was elected to be the First Year Rep OCM on the committee, in this position I focued on advertising the society to other First Years and making exciting events targeted to other first years. University College Cork's Netsoc Society (the Networking, Gaming and Technology Society) runs a digital services network and provides educational opportunities for its almost 2,000 members as well as weekly gaming and social events.
 "
 ---
 
-University College Cork's Netsoc Society (the Networking, Gaming and Technology Society) runs a digital services network and provides educational opportunities for its almost 2,000 members as well as weekly gaming and social events. During my first year in UniversityO, I was elected to be the First Year Rep OCM on the committee, in this position I focued on advertising the society to other First Years and making exciting events targeted to other first years.
+University College Cork's Netsoc Society (the Networking, Gaming and Technology Society) runs a digital services network and provides educational opportunities for its almost 2,000 members as well as weekly gaming and social events. During my first year in University, I was elected to be the First Year Rep OCM on the committee, in this position I focued on advertising the society to other First Years and making exciting events targeted to other first years.
