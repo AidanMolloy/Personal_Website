@@ -1,6 +1,10 @@
 import { parseISO, format } from "date-fns";
 
-export default function Date({ dateString }) {
+export default function FormatDate({ dateString }) {
+  const today = new Date().toISOString().slice(0, 10);
+  if (dateString == today) {
+    return <time dateTime={dateString}>Present</time>;
+  }
   const date = parseISO(dateString);
   return <time dateTime={dateString}>{format(date, "MMM yyyy")}</time>;
 }
@@ -10,12 +14,7 @@ const differenceInMonths = (a, b) =>
 
 export function DateBetween({ dateFrom, dateTo }) {
   const dateF = parseISO(dateFrom);
-  let dateT;
-  if (dateTo === "Present") {
-    dateT = new Date();
-  } else {
-    dateT = parseISO(dateTo);
-  }
+  const dateT = parseISO(dateTo);
   let months = differenceInMonths(dateT, dateF);
   let str = "";
   const years = Math.floor(months / 12);
