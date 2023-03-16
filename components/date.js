@@ -10,7 +10,12 @@ const differenceInMonths = (a, b) =>
 
 export function DateBetween({ dateFrom, dateTo }) {
   const dateF = parseISO(dateFrom);
-  const dateT = parseISO(dateTo);
+  let dateT;
+  if (dateTo === "Present") {
+    dateT = new Date();
+  } else {
+    dateT = parseISO(dateTo);
+  }
   let months = differenceInMonths(dateT, dateF);
   let str = "";
   const years = Math.floor(months / 12);

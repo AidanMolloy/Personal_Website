@@ -34,7 +34,11 @@ export default function PostBox(props) {
                   <div className={postStyles.dateContainer}>
                     <div className={postStyles.dateItem}>
                       <Date dateString={dateFrom} /> -{" "}
-                      <Date dateString={dateTo} />
+                      {dateTo === "Present" ? (
+                        dateTo
+                      ) : (
+                        <Date dateString={dateTo} />
+                      )}
                     </div>
                     &nbsp;
                     <div className={postStyles.dateItem}>
