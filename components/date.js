@@ -1,6 +1,10 @@
 import { parseISO, format } from "date-fns";
 
-export default function Date({ dateString }) {
+export default function FormatDate({ dateString }) {
+  const today = new Date().toISOString().slice(0, 10);
+  if (dateString == today) {
+    return <time dateTime={dateString}>Present</time>;
+  }
   const date = parseISO(dateString);
   return <time dateTime={dateString}>{format(date, "MMM yyyy")}</time>;
 }

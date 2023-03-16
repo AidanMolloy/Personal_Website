@@ -1,4 +1,4 @@
-import Date, { DateBetween } from "../components/date";
+import FormatDate, { DateBetween } from "../components/date";
 import postStyles from "./post.module.css";
 import Image from "next/image";
 
@@ -33,8 +33,8 @@ export default function PostBox(props) {
                   <div className={postStyles.company}>{company}</div>
                   <div className={postStyles.dateContainer}>
                     <div className={postStyles.dateItem}>
-                      <Date dateString={dateFrom} /> -{" "}
-                      <Date dateString={dateTo} />
+                      <FormatDate dateString={dateFrom} /> -{" "}
+                      <FormatDate dateString={dateTo} />
                     </div>
                     &nbsp;
                     <div className={postStyles.dateItem}>

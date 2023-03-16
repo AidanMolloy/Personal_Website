@@ -27,10 +27,6 @@ export default function Home({ allPostsData }) {
           Cork. I&apos;ve been working in tech for over 10 years, from starting
           my own companies to Interning three times at Google.
         </p>
-        <p>
-          This website is work in progress, you can view my previous website at{" "}
-          <Link href="https://aidan.molloy.ie">https://aidan.molloy.ie</Link>
-        </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Experience</h2>
