@@ -25,10 +25,3 @@ npm-debug.log*
 
 # vercel
 .vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-# contentlayer
-.contentlayer
