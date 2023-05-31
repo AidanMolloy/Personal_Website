@@ -15,6 +15,13 @@
 
 # misc
 .DS_Store
+.vscode
 
 # debug
 npm-debug.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel

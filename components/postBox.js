@@ -2,6 +2,8 @@ import FormatDate, { DateBetween } from "../components/date";
 import postStyles from "./post.module.css";
 import Image from "next/image";
 
+const today = new Date().toISOString().slice(0, 10);
+
 export default function PostBox(props) {
   return (
     <ul className={postStyles.list}>
@@ -34,11 +36,20 @@ export default function PostBox(props) {
                   <div className={postStyles.dateContainer}>
                     <div className={postStyles.dateItem}>
                       <FormatDate dateString={dateFrom} /> -{" "}
-                      <FormatDate dateString={dateTo} />
+                      {dateTo == "" ? (
+                        <FormatDate dateString={today} />
+                      ) : (
+                        <FormatDate dateString={dateTo} />
+                      )}
                     </div>
                     &nbsp;
                     <div className={postStyles.dateItem}>
-                      · <DateBetween dateFrom={dateFrom} dateTo={dateTo} />
+                      ·{" "}
+                      {dateTo == "" ? (
+                        <DateBetween dateFrom={dateFrom} dateTo={today} />
+                      ) : (
+                        <DateBetween dateFrom={dateFrom} dateTo={dateTo} />
+                      )}
                     </div>
                   </div>
                 </div>
